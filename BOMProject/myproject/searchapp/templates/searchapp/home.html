@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book of Mormon Analysis</title>
+</head>
+<body>
+    <h1>Book of Mormon Word Frequency Analysis</h1>
+    <form action="{% url 'results' %}" method="get">
+        <input type="text" name="search_word" placeholder="Enter a word to search">
+        <input type="submit" value="Search">
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>

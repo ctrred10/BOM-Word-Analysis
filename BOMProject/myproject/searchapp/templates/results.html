@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for "{{ search_word }}"</h1>
+    <p>Occurrences in Book of Mormon: {{ bom_count }} out of {{ bom_total_words }}</p>
+    <p>Occurrences in Journal 1832-1834: {{ journal1_count }} out of {{ journal1_total_words }}</p>
+    <p>Occurrences in Journal 1835-1836: {{ journal2_count }} out of {{ journal2_total_words }}</p>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
